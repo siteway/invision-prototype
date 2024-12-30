@@ -5,6 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Management</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    @livewireStyles
+    <style>
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .pagination > * {
+            padding: 0.5rem 1rem;
+            border-radius: 0.375rem;
+        }
+        .pagination .active {
+            background-color: #4f46e5;
+            color: white;
+        }
+        .pagination a:hover:not(.active) {
+            background-color: #f3f4f6;
+        }
+    </style>
 </head>
 <body>
 
@@ -29,4 +48,5 @@
     @yield('content')
   </div>
 
+  @livewireScripts
 </body>

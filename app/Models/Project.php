@@ -8,5 +8,5 @@ class Project extends Model
 {
     protected $table = 'projects';
     protected $primaryKey = 'id';
-    protected $fillable = ['name', 'slug'];
+    protected $fillable = ['name', 'slug', 'first_image'];
 }
